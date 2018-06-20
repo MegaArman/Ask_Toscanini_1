@@ -106,6 +106,7 @@ function onRequest(request, response)
       response.writeHead(200, {"Content-Type": "text/plain"}); 
       const queryString = requestBody; 
       const queryObject = parseQueryString(queryString);
+      console.log("queryObject", JSON.stringify(queryObject));
 
       //error string
       if (typeof queryObject === "string" && queryObject.includes("ERROR"))
