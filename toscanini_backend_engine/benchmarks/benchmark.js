@@ -1,6 +1,6 @@
 //built from writeFacts
 const fs = require("fs");
-const computeFacts = require("./computeFactsBenchmark.js");
+const computeFacts = require("./computeFacts.js");
 
 const scoreDir = process.argv[2];
 const scoreNames = fs.readdirSync(scoreDir);
